@@ -1,0 +1,100 @@
+*{
+	font-family: 'Muli', sans-serif;
+}
+
+html{
+	height: 100%;
+	width: 100%;
+}
+
+body{
+	background-image: linear-gradient(to top, #bcbcbc, #cccccc, #dddddd, #eeeeee, #ffffff);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+}
+
+.JK-container{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+	padding-top: 30px;
+}
+
+.description{
+	width: 25%;
+	height: 330px;
+	padding-left: 8px;
+	background-image: linear-gradient(to right top, #f38989, #ee728d, #e25c98, #ce4ca8, #ad45ba, #a258c9, #9668d6, #8a76e0, #a798e9, #c4baf2, #e1dcf9, #ffffff);
+	box-shadow: 4px 4px 12px rgba(11, 12, 30, .5);
+}
+
+.socialMedia{
+	flex-direction: row;
+	float: left;
+}
+
+.imgSocial{
+	width: 50px;
+	height: auto;
+	margin-right: 10px;
+}
+
+.return{
+	margin-top: 0;
+	margin-bottom: 0;
+}
+.adresse{
+	margin: 30px 0px 20px 0px;
+}
+
+.telNum{
+	margin-bottom: 20px;
+}
+
+form{
+	width: 65%;
+	background-color: #FFFF;
+	box-shadow: 4px 4px 12px rgba(11, 12, 30, .5);
+	padding: 6px 6px 6px 6px;
+}
+
+button{
+	float: right;
+}
+
+@media screen and (max-width: 879px) {
+	.JK-container{
+		border: solid red 1px;
+		flex-direction: column;
+		background-color: #ffff;
+		align-items: center;
+	}
+
+	.description{
+		display: flex;
+		flex-direction: column;
+		border: solid green 1px;
+		width: 65%;
+		height: 330px;
+		text-align: center;
+		align-items: center;
+		background-image: none;
+		box-shadow: none;
+	}
+
+	.adresse{
+		margin: 10px 0px 5px 0px;
+	}
+
+	.telNum{
+		margin-bottom: 5px;
+	}
+
+	form{
+		width: 65%;
+		background-color: #FFFF;
+		box-shadow:none;
+		padding: 6px 6px 6px 6px;
+	}
+
+}
