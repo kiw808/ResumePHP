@@ -1,6 +1,9 @@
 * {
   font-family: 'Merriweather', serif;
 }
+html {
+  width: 100%;
+}
 body {
   height: 100%;
   display: flex;
@@ -89,4 +92,12 @@ footer {
 }
 .footer-content {
   width: 70rem;
+}
+
+/* Responsive tablet */
+@media only screen and (max-width: 960px) {
+  .body-layout {
+    width: 90%;
+    flex-direction: column;
+  }
 }
