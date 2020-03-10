@@ -1,0 +1,26 @@
+h2 {
+  font-size: 1.8em;
+}
+h3 {
+  font-size: 1.4em;
+}
+
+.body-layout {
+  width: 60rem;
+  margin: auto;
+  background-color: #F2EEE1;
+
+  display: flex;
+}
+.contenu {
+  margin: 2em;
+  padding: 2em;
+  background-color: #FFFFFF;
+}
+.main-illu {
+  width: 40%;
+  padding-bottom: 6em;
+  background-color: #FFFFFF;
+
+  align-self: flex-start;
+}
