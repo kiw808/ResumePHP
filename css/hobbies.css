@@ -1,24 +1,27 @@
+* {
+  font-family: 'Muli', sans-serif;
+}
 body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
   background-color: rgba(151, 160, 175, 1);
 }
-h1 {
-  font-family: 'Source Sans Pro', sans-serif;
-}
 h2 {
-  font-family: 'Muli', sans-serif;
+  margin-bottom: .8em;
 }
-h3 {
-  font-family: 'Muli', sans-serif;
+ul {
+  list-style: none;
 }
-p {
-  font-family: 'Muli', sans-serif;
+li {
+  margin-bottom: 1.5em;
 }
 
 /* main content */
 .body-layout {
   width: 70rem;
   margin: 0 auto;
-  padding-bottom: 5rem;
+  padding-bottom: 2rem;
   /* background-color: rgba(151, 160, 175, 1); */
 
   display: flex;
@@ -38,11 +41,13 @@ p {
   align-self: flex-start;
 }
 .main-content {
+  list-style-type: ;
   margin-left: 0;
 }
 
 /* Footer */
 footer {
+  margin-top: auto;
   height: 12rem;
   background-color: rgba(11, 12, 30, 1); 
 }
