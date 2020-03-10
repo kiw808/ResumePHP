@@ -26,6 +26,7 @@ body{
 	padding-left: 8px;
 	background-image: linear-gradient(to right top, #f38989, #ee728d, #e25c98, #ce4ca8, #ad45ba, #a258c9, #9668d6, #8a76e0, #a798e9, #c4baf2, #e1dcf9, #ffffff);
 	box-shadow: 4px 4px 12px rgba(11, 12, 30, .5);
+	border-radius: 10px;
 }
 
 .socialMedia{
@@ -56,6 +57,7 @@ form{
 	background-color: #FFFF;
 	box-shadow: 4px 4px 12px rgba(11, 12, 30, .5);
 	padding: 6px 6px 6px 6px;
+	border-radius: 10px;
 }
 
 button{
