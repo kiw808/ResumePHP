@@ -1,3 +1,7 @@
+*{
+	font-family: 'Muli', sans-serif;
+}
+
 .pos-f-t{
 	display: none;
 }
@@ -12,12 +16,35 @@
 	flex-direction: row;
 	width: 500px;
 	height: 100px;
-	opacity: 1;
 }
 
-#JK-mrBean{
+#JK-mrBeanNav{
 	height: 100px;
 	width: auto;
+	box-shadow: 6px 6px 12px;
+	margin-right: 10px;
+}
+
+.JK-navBack{
+	background-color: #343a40 !important;
+}
+
+.JK-navLink{
+	color: white !important;
+}
+
+.JK-active > .JK-navLink{
+	color: #acabab !important;
+}
+
+a:hover{
+	color: #cdcdcd !important;
+}
+
+.JK-navReturn{
+	margin-top: 0;
+	margin-bottom: 0;
+	color: white;
 }
 
 @media screen and (max-width: 990px) {

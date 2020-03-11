@@ -11,42 +11,43 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
     <!-- CSS perso -->
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/navBar.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/contact.css">
 
     <title>Mon CV</title>
   </head>
   <body>
     <header>
-  <!--Mnu classic-->
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <!--Menu classic-->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light JK-navBack">
         <div class="JK-imgNavBar">
-          <img id="JK-mrBean" src="https://cdn.pixabay.com/photo/2016/04/01/09/07/grimace-1299164_1280.png" alt="Portrait de Rowan Atkinson alias MrBean">
+          <img id="JK-mrBeanNav" src="https://cdn.pixabay.com/photo/2016/04/01/09/07/grimace-1299164_1280.png" alt="Portrait de Rowan Atkinson alias MrBean">
           <div>
-            <p class="return">
+            <p class="JK-navReturn">
             MrBean
             </p>
-            <p class="return">
+            <p class="JK-navReturn">
             January 6, 1955
             </p>
           </div>
         </div>
         <div class="collapse navbar-collapse JK-nav" id="navbarNav">
           <ul class="navbar-nav">
-              <li class="nav-item ">
-                <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+              <li class="nav-item active JK-active">
+                <a class="nav-link JK-navLink" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Experience</a>
+                <a class="nav-link JK-navLink" href="experience.html">Experiences</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="diplomes.html">Diplomes</a>
+                <a class="nav-link JK-navLink" href="diplomes.html">Diplomes</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="hobbies.html" tabindex="-1" aria-disabled="true">Hobbies</a>
+                <a class="nav-link JK-navLink" href="hobbies.html" tabindex="-1" aria-disabled="true">Hobbies</a>
               </li>
-              <li class="nav-item active">
-                <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+              <li class="nav-item">
+                <a class="nav-link JK-navLink" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
               </li>
           </ul>
         </div>
@@ -135,6 +136,52 @@
         </div>
       </form>
     </div>
+    
+    <!-- Footer -->
+    <footer>
+      <!--<section class="footer-content">-->
+      <div class="JK-footer">
+        <div class="footer-box" id="footer-links">
+          <ul class="JK-link">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="diplomes.html">Degrees</a></li>
+            <li><a href="hobbies.html">Hobbies</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-box" id="social">
+          <div class="JK-socialLink">
+            <a href=""><i class="fab fa-linkedin"></i></a>
+            <a href=""><i class="fab fa-facebook-square"></i></a>
+            <a href=""><i class="fab fa-youtube"></i></a>
+          </div> 
+          <div id="copyright">
+          <p>This website was made by :</p>
+          <ul id="contributors">
+            <a href="https://github.com/Jerem-67"><li>Jeremy Koenig, </li></a>
+            <a href="https://github.com/Bouderbala67"><li>Aimen Bouderbala, </li></a>
+            <a href="https://github.com/kiw808"><li>Pierre Muller</li></a>
+          </ul>
+        </div>  
+        </div>
+        <div class="footer-box" id="footer-contact">
+          <ul>
+            <li>ATKINSON, Rowan</li>
+            <li>+00.0.00.00.00.00</li>
+            <li>mr.bean@msn.com</li>
+          </ul>
+        </div>
+      <!--</section>-->
+        <!--<div id="copyright">
+          <p>This website was made by :</p>
+          <ul id="contributors">
+            <a href="https://github.com/Jerem-67"><li>Jeremy Koenig, </li></a>
+            <a href="https://github.com/Bouderbala67"><li>Aimen Bouderbala, </li></a>
+            <a href="https://github.com/kiw808"><li>Pierre Muller</li></a>
+          </ul>
+        </div>-->
+      </div>
+    </footer>
 
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
