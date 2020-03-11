@@ -28,7 +28,6 @@ a:hover {
   width: 70rem;
   margin: 0 auto;
   padding-bottom: 2rem;
-  /* background-color: rgba(151, 160, 175, 1); */
   
   display: flex;
 }
@@ -67,6 +66,7 @@ a:hover {
   .main-illu{
     order: 1;
     margin-bottom: 4em;
+    width: 60%;
   }
 }
 
