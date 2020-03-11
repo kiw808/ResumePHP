@@ -2,51 +2,71 @@
 	font-family: 'Muli', sans-serif;
 }
 
-.pos-f-t{
-	display: none;
+body{
+	background-image: linear-gradient(to top, #bcbcbc, #cccccc, #dddddd, #eeeeee, #ffffff);
+	background-repeat: no-repeat;
+	background-attachment: fixed;
 }
 
-.JK-nav{
-	justify-content: right;
-	margin-top: 58px;
-}
-
-.JK-imgNavBar{
+.JK-container{
 	display: flex;
 	flex-direction: row;
-	width: 500px;
-	height: 100px;
-	opacity: 1;
+	justify-content: space-around;
+	padding-top: 20px;
+	margin-bottom: 20px;
 }
 
 #JK-mrBean{
-	height: 100px;
-	width: auto;
+	height: 500px;
+	width: ;
+	margin-left: 10px;
+	float: left;
+	box-shadow: 6px 6px 12px;
 }
 
-@media screen and (max-width: 990px) {
-	.bg-light{
+#JK-mrBeanRespon{
+	display: none;
+}
+
+.JK-colum{
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.JK-row{
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.JK-description{
+	width: 80%;
+}
+
+.JK-carousel{
+	width: 50% !important;
+	height: 50% !important;
+}
+
+@media screen and (max-width: 990px){
+	
+	#JK-mrBean{
 		display: none;
-	}
-	
-	.pos-f-t{
+	}	
+
+	#JK-mrBeanRespon{
 		display: inline;
+		height: 100px;
+		width: auto;
+		float: left;
+		margin-right: 10px;
+		padding-top: 5px;
+		margin-bottom: -5px;
 	}
 
-	/*.JK-navBack{
-		background-color: #f8f9fa !important;
-	}*/
 
-	a{
-		color: #FFF;
-	}
-
-	a:hover{
-		color: gray;
-	}
-
-	ul{
-		align-items: center;
-	}
-	
 }
+
+
+
