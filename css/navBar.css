@@ -7,7 +7,7 @@
 }
 
 .JK-nav{
-	justify-content: right;
+	justify-content: flex-end;
 	margin-top: 58px;
 }
 
