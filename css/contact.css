@@ -4,16 +4,23 @@
 
 html{
 	height: 100%;
-	width: 100%;
+	width: 100%
 }
 
 body{
+	display: flex;
+	flex-direction: column;
+	min-height: 100%;
+	position: relative;
+	width: 100%;
 	background-image: linear-gradient(to top, #bcbcbc, #cccccc, #dddddd, #eeeeee, #ffffff);
 	background-repeat: no-repeat;
 	background-attachment: fixed;
+
 }
 
 .JK-container{
+	border: solid red 3px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
