@@ -20,7 +20,6 @@ body{
 }
 
 .JK-container{
-	border: solid red 3px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
