@@ -2,9 +2,10 @@
 <html lang="en">
   <head>
 
+
     <!--Font perso-->
     <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"> 
-    
+
     <!-- Required meta tags -->
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
@@ -15,7 +16,7 @@
     <!-- CSS perso -->
     <link rel="stylesheet" href="css/navBar.css">
     <link rel="stylesheet" href="css/footer.css">
-    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/contact.css">
 
     <title>Mon CV</title>
   </head>
@@ -36,7 +37,9 @@
         </div>
         <div class="collapse navbar-collapse JK-nav" id="navbarNav">
           <ul class="navbar-nav">
-              <li class="nav-item active JK-active">
+
+              <li class="nav-item">
+
                 <a class="nav-link JK-navLink" href="index.html">Home <span class="sr-only">(current)</span></a>
               </li>
               <li class="nav-item">
@@ -45,7 +48,7 @@
               <li class="nav-item">
                 <a class="nav-link JK-navLink" href="hobbies.html" tabindex="-1" aria-disabled="true">Hobbies</a>
               </li>
-              <li class="nav-item">
+              <li class="nav-item active JK-active">
                 <a class="nav-link JK-navLink" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
               </li>
           </ul>
@@ -81,7 +84,6 @@
 
     <div class="JK-container">
 		<img id="JK-mrBean" src="https://cdn.pixabay.com/photo/2015/03/13/00/54/mr-bean-671027_1280.jpg" alt="Photo de MrBean">
-
       <div class="JK-colum">
         <div class="JK-description">
           <p>
@@ -133,6 +135,64 @@
       </div>
     </div>
 
+      <div class="description">
+        <h2>Contact</h2>
+        <h3>Mr Bean</h3>
+        <div class="adresse">
+          <p class="return">
+            372-374 Seven Sisters Road
+          </p>
+          <p class="return">
+            Highbury
+          </p>
+          <p class="return">
+            London
+          </p>
+        </div>
+        <div class="telNum">
+          <p class="return">
+            Tel: 123-456-789
+          </p>
+          <p class="return">
+            Fax: 123-456-789
+          </p>
+        </div>
+        <div class="socialMedia">
+          <a href="https://www.facebook.com/"><img class="imgSocial" src="img/FaceBook.png" alt="Logo FaceBook"></a>
+          <a href="https://twitter.com/"><img class="imgSocial" src="img/Twitter.png" alt="Logo Twitter"></a>
+          <a href="https://www.instagram.com/"><img class="imgSocial" src="img/Insta.png" alt="Logo Instagram"></a>
+        </div>
+      </div>  
+
+      <form action="" method="get" name="formSaise">
+        <div class="form-group">
+          <label for="name">Nom *</label>
+          <input type="text" required="" class="form-control" id="name" placeholder="MrBean">
+        </div>
+        <div class="form-group">
+          <label for="exampleFormControlInput1">Email address *</label>
+          <input type="email" required="" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+        </div>
+        <div class="form-group">
+          <label for="tel">Tel *</label>
+          <input type="tel" required="" class="form-control" id="tel" placeholder="0123456789">
+        </div>                
+        <div class="form-group">
+          <label for="exampleFormControlTextarea1">Message *</label>
+          <textarea required="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+        </div>
+        <div class="button">
+          <button type="submit" value="OK" class="btn btn-outline-secondary">Send</button>
+        </div>
+        <!--  <p>
+    <label for="prenom">Saisissez votre prénom :</label>
+    <input type="text" name="prenom" id="prenom" />
+
+    <input type="submit" value="Ok" /> -->
+  </p>
+      </form>
+    </div>
+    
     <!-- Footer -->
     <footer>
       <div class="footer-content">
