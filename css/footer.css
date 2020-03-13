@@ -1,4 +1,12 @@
-/* Footer style */
+
+
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+  /* Footer style */
 footer {
 
   margin-top: 30px;
@@ -40,7 +48,7 @@ footer p, li {
   font-size: 2rem;
   margin: 0 1rem;
 }
-.footer-box {
+.footer-box {https://i.imgflip.com/1w2led.jpg
   width: 10rem;
 }
 
@@ -62,7 +70,7 @@ footer p, li {
 #contributors {
   margin: 0;
 }
-#copyright ul {
+#copyright ul {https://i.imgflip.com/1w2led.jpg
   padding: 0;
 }
 #copyright a {
