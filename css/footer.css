@@ -1,14 +1,25 @@
+html {
+  height: 100%;
+}
+body {
+  min-height: 100%;
+}
+
 /* Footer style */
 footer {
   margin-top: 30px;
   height: 10rem;
   /* background-color: rgba(11, 12, 30, 1); */
+
   background-color: #343a40;
   box-shadow: 3px 3px 12px rgba(11, 12, 30, .5);
-
+  
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
 }
 footer p, li {
   margin-bottom: 0;
@@ -73,6 +84,10 @@ footer p, li {
 
 @media only screen and (max-width: 990px) {
   footer {
+<<<<<<< HEAD
+    margin-top: 2rem;
+=======
+>>>>>>> dev
     height: auto;
     width: 100%;
   }
