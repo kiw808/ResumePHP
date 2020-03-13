@@ -1,0 +1,114 @@
+*{
+    font-family: "Muli", sans-serif;
+}
+
+body{
+   background-color:rgba(151, 160, 175, 1);
+}
+.AB-container{
+    display:block;  
+}
+#Experience{
+    
+    text-align: center;
+}
+
+h2{
+    font-size: 80px;
+    margin-top:0;
+    text-align: center;
+    color:grey;
+    background-color:#34495e;
+}
+ 
+h3{
+    
+    border-radius: 45px 4% / 32px 30px;
+    margin-top:0;
+    text-align: center;
+    color:white;
+    background-color:#34495e;
+}
+
+
+#image1{
+    float:left;
+    border-radius: 30px;
+   
+
+}
+.blocFormation{
+   box-shadow:12px 12px 2px 1px ;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 4em;
+    border:solid black;
+    height: 300px;
+    width:90%;
+    color:grey;
+
+    background-color:white;
+}
+.blocFormation p{
+    margin-top: 30px;
+    font-size: x-large;
+}
+#image2{
+    float: right;
+    border-radius: 30px;
+ }
+.blocDiplome{
+    color:grey;
+    font-size: x-large;
+    padding-left: 0;
+    box-shadow:12px 12px 2px 1px ;
+    text-align: center;
+    border-radius: 30px;
+    margin-top: 20px;
+    margin-left: 3em;
+    border:solid black;
+    height: 400px;
+    width:90%;
+    background-color:white;
+}
+.blocDiplome p{
+  
+    margin-top: 30px;
+}
+#image3{
+    margin-top: -5px;
+    float: left;
+    border-radius: 30px;
+    width: auto;
+    height:200px;
+}
+.blocStage{
+    color:grey;
+    font-size:18px;
+    text-align: center;
+    box-shadow:12px 12px 2px 1px ;
+    border-radius: 30px;
+    margin-top: 30px;
+    margin-left: 4em;
+    border:solid black;
+    height: 200px;
+    width: 90%;
+    background-color:white;
+}
+
+.list{
+    
+  text-align:center;
+}
+.list1{
+  text-align: center;
+}
+.list2{
+  text-align: right;
+}
+ 
+@media screen and (min-width:886px){
+
+display:block;
+}
