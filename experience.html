@@ -8,39 +8,69 @@
 		<!-- Bootstrap CSS -->
 		<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 		<!-- CSS perso -->
-		<link rel="stylesheet" href= "css/index.css">
+		<link rel="stylesheet" href= "css/navBar.css">
     <link rel="stylesheet" href="css/experience.css">
     <link rel="stylesheet" href="css/footer.css">
 		<title>Mon CV</title>
 	</head>
 	<body>
 		<header>
-			<nav class="navbar navbar-expand-lg navbar-light bg-light">
-				<div class="imgNavBar">
-					<img id="mrBean" src="https://cdn.pixabay.com/photo/2016/04/01/09/07/grimace-1299164_1280.png" alt="Portrait de Rowan Atkinson alias MrBean">
-					<p>
-						<strong>Mr Rowan Atkinson</strong>
-					</p>
-					<br/>
-					<p>
-						6 janvier 1955 à mutzig, région du Bas-rhin
-					</p>
-					<br/>
-				</p>
-			</div>
-			
-			<div class="collapse navbar-collapse JK-nav" id="navbarNav">
-				<ul class="navbar-nav">
-					<li class="nav-item ">
-						<a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
-					</li>
-					<li class="nav-item active"><a class="nav-link" href="experience.html">Experience</a></li>
-					<li class="nav-item"><a class="nav-link" href="diplomes.html">Diplomes</a></li>
-					<li class="nav-item"><a class="nav-link" href="hobbies.html" tabindex="-1" aria-disabled="true">Hobbies</a></li>
-					<li class="nav-item"><a class="nav-link" href="contacte.html" tabindex="-1" aria-disabled="true">Contact</a></li>
-				</ul>
-			</div>
-		</nav>
+			 <!--Menu classic-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light JK-navBack">
+      <div class="JK-imgNavBar">
+        <img id="JK-mrBeanNav" src="https://cdn.pixabay.com/photo/2016/04/01/09/07/grimace-1299164_1280.png" alt="Portrait de Rowan Atkinson alias MrBean">
+        <div>
+          <p class="JK-navReturn">
+          MrBean
+          </p>
+          <p class="JK-navReturn">
+          January 6, 1955
+          </p>
+        </div>
+      </div>
+      <div class="collapse navbar-collapse JK-nav" id="navbarNav">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link JK-navLink" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link JK-navLink" href="experience.html">CV</a>
+            </li>
+            <li class="nav-item active JK-active">
+              <a class="nav-link JK-navLink" href="hobbies.html" tabindex="-1" aria-disabled="true">Hobbies</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link JK-navLink" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+<!--Menu Burger-->
+    <div class="pos-f-t">
+      <div class="collapse" id="navbarToggleExternalContent">
+        <div class="bg-dark p-4">
+          <ul class="navbar-nav">
+            <li class="nav-item ">
+              <a class="nav-link" href="index.html">Home <span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="experience.html">CV</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="hobbies.html" tabindex="-1" aria-disabled="true">Hobbies</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" href="contact.html" tabindex="-1" aria-disabled="true">Contact</a>
+            </li>
+        </ul>
+        </div>
+      </div>
+      <nav class="navbar navbar-dark bg-dark JK-navBack">
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      </nav>
+    </div>
 	</header>
 	<section>
 		
