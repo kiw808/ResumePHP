@@ -53,29 +53,8 @@
         </div>
     </div>
 
-    <form action="" method="get" name="formSaise">
-        <div class="form-group">
-            <label for="name">Nom *</label>
-            <input type="text" required="" class="form-control" id="name" placeholder="MrBean">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlInput1">Email address *</label>
-            <input type="email" required="" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
-        </div>
-        <div class="form-group">
-            <label for="tel">Tel *</label>
-            <input type="tel" required="" class="form-control" id="tel" placeholder="0123456789">
-        </div>
-        <div class="form-group">
-            <label for="exampleFormControlTextarea1">Message *</label>
-            <textarea required="" class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-        </div>
-        <div class="button">
-            <button type="submit" value="OK" class="btn btn-outline-secondary">Send</button>
-        </div>
-
-    </form>
-
+    <!-- Injection du form -->
+    <?php include("_form.php"); ?>
 
 </div>
 
