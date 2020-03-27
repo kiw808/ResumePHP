@@ -1,23 +1,13 @@
-
-
-html {
-  height: 100%;
-}
-body {
-  min-height: 100%;
-}
-  /* Footer style */
+/* Footer style */
 footer {
-
-  margin-top: 30px;
+  margin-top: auto;
   height: 10rem;
-  /* background-color: rgba(11, 12, 30, 1); */
   background-color: #343a40;
-  box-shadow: 3px 3px 12px rgba(11, 12, 30, .5);
+  padding-top: 2rem;
 
   display: flex;
   flex-direction: column;
-  justify-content: flex-end;
+
 }
 footer p, li {
   margin-bottom: 0;
@@ -26,8 +16,6 @@ footer p, li {
 }
 
 .footer-content {
-  width: 70rem;
-  margin: 1em auto;
   font-size: .8em;
   color: rgba(151, 160, 175, 1);
   display: flex;

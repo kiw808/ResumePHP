@@ -2,8 +2,8 @@
     <div class="footer-content">
         <div class="footer-item footer-box" id="footer-links">
             <ul>
-                <li><a href="index.php">Home</a></li>
-                <li><a href="diplomes.html">Degrees</a></li>
+                <li><a href="index.php">Introduction</a></li>
+                <li><a href="experience.php">Experience</a></li>
                 <li><a href="hobbies.php">Hobbies</a></li>
                 <li><a href="contact.php">Contact</a></li>
             </ul>
@@ -29,5 +29,4 @@
             <a href="https://github.com/kiw808"><li>Pierre Muller</li></a>
         </ul>
     </div>
-
 </footer>

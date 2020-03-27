@@ -1,0 +1,48 @@
+*{
+    font-family: 'Merriweather', serif;
+    margin: 0;
+    padding: 0;
+}
+html {
+    height: 100%;
+}
+body {
+    min-height: 100%;
+    color: #2F2F2F;
+    display: flex;
+}
+h1 {
+    font-family: 'Playfair Display', serif;
+}
+h2 {
+    font-size: 2em;
+    font-family: 'Playfair Display', serif;
+}
+p {
+    margin-bottom: 1em;
+}
+button {
+    font-size: 1.2em;
+    padding: .5em 2em;
+    border-radius: 5px;
+    border: none;
+    background-color: #949b7e;
+    color: #F8F4E3;
+}
+button:hover {
+    background-color: #c2c9ad;
+    cursor: pointer;
+}
+.page-content {
+    min-height: 100%;
+    width: 100%;
+    margin-left: 25rem;
+    display: flex;
+    flex-direction: column;
+}
+.main-content {
+    padding: 4em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}

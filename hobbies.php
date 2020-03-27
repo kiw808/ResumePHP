@@ -1,53 +1,28 @@
 <!doctype html>
 <html lang="en">
-<head>
-    <!-- Required meta tags -->
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+<!-- head -->
+<?php
+$style = 'hobbies';
+$title = 'Hobbies';
+$nav = 'hobbies';
+require('_head.php');
+?>
 
-    <!-- Personnal CSS -->
-    <link rel="stylesheet" href="css/navBar.css">
-    <link rel="stylesheet" href="css/hobbies.css">
-    <link rel="stylesheet" href="css/footer.css">
-    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
-    <title>Rowan Atkinson - CV</title>
-</head>
 <body>
 
-<!-- Injection header -->
-<?php include("_header.php"); ?>
+<!-- Side menu -->
+<?php require("_header.php"); ?>
 
-<!-- Hobbies -->
-<section class="body-layout">
-    <div class="main-illu contenu">
-        <img class="photo" src="img/mini_red.png" alt="mini cooper red, white stripes">
+    <!-- Main content -->
+    <div class="page-content">
+        <section class="main-content">
+            <!-- Hobbies -->
+            <p>There is not much to see here for now, please skip to the <a href="contact.php">Contact section</a> !</p>
+        </section>
+        <!-- Footer -->
+        <?php require("_footer.php"); ?>
     </div>
-    <main class="main-content contenu">
-        <h2>My hobbies</h2>
-        <article>
-            <ul>
-                <li>
-                    <h3>My car</h3>
-                    <p>I'm in love with my, car which is a classy Mini Cooper, red painted whith white stripes (see picture beside). I ride it every time I can and I take her too meetings to show off her genuine beauty.</p>
-                </li>
-                <li>
-                    <h3>Travel</h3>
-                    <p>I like to travel around our beautiful country of England. I'm not much a city guy, even if I spend most of my time in the city. I'm used to go in the countryside, with my beloved car, and enjoy the nice green hills for a weekend.</p>
-                </li>
-                <li>
-                    <h3>Humour</h3>
-                    <p>People usually don't understand my sense of humour, and maybe I don't understand how it works either. Nevertheless people tend to laugh when they look at me, but I don't know if this is a good thing or not!</p>
-                </li>
-            </ul>
-        </article>
-    </main>
-</section>
-
-<!-- Injection footer -->
-<?php include("_footer.php"); ?>
 
 <!-- Scripts perso -->
 <script src="https://kit.fontawesome.com/1ef8454837.js" crossorigin="anonymous"></script>
