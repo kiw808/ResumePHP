@@ -7,7 +7,7 @@
     </div>
     <!-- Last name -->
     <div class="form-group">
-        <label for="lastname">Name</label>
+        <label for="lastname">Last name</label>
         <input type="text" name="lastname" required="" class="form-control" id="lastname" placeholder="Doe" pattern="[A-Z][A-Za-z' -]+">
     </div>
     <!-- E-mail -->
