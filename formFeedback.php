@@ -1,12 +1,12 @@
 <?php
 $formData = [];
 $formData = [
-    'firstname' => htmlspecialchars($_POST['firstname']),
-    'lastname' => htmlspecialchars($_POST['lastname']),
-    'email' => htmlspecialchars($_POST['mail']),
-    'tel' => htmlspecialchars($_POST['tel']),
-    'subject' => htmlspecialchars($_POST['subject']),
-    'msg' => htmlspecialchars($_POST['msg'])
+    'firstname' => trim($_POST['firstname']),
+    'lastname' => trim($_POST['lastname']),
+    'email' => trim($_POST['email']),
+    'tel' => trim($_POST['tel']),
+    'subject' => trim($_POST['subject']),
+    'msg' => trim($_POST['msg'])
 ];
 ?>
 <?php

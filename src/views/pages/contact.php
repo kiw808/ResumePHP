@@ -1,5 +1,33 @@
+<?php
+// Database connection
+require_once './config/connec.php';
+$pdo = new PDO(DSN, USER, PASS);
+
+if (isset($_POST['send-message'])) {
+
+    // Preparing SQL request
+    $query = 'INSERT INTO contact (firstname, lastname, email, tel, subject, message) VALUES (:firstname, :lastname, :email, :tel, :subject, :message)';
+    $statement = $pdo->prepare($query);
+
+    // Securing values
+    $statement->bindValue(':firstname', $_POST['firstname'], PDO::PARAM_STR);
+    $statement->bindValue(':lastname', $_POST['lastname'], PDO::PARAM_STR);
+    $statement->bindValue(':email', $_POST['email'], PDO::PARAM_STR);
+    $statement->bindValue(':tel', $_POST['tel'], PDO::PARAM_STR);
+    $statement->bindValue(':subject', $_POST['subject'], PDO::PARAM_STR);
+    $statement->bindValue(':message', $_POST['msg'], PDO::PARAM_STR);
+
+    // Execute request
+    $statement->execute();
+
+    // Redirect to same page
+    header('location: ./contact.php');
+}
+
+?>
+
 <h2>Send me a message !</h2>
-<form action="contact.php" method="post" name="formSaise" class="form">
+<form action="" method="post" name="formSaise" class="form">
     <!-- First name -->
     <div class="form-group">
         <label for="firstname">First name</label>
@@ -12,8 +40,8 @@
     </div>
     <!-- E-mail -->
     <div class="form-group">
-        <label for="mail">Email address</label>
-        <input type="email" name="mail" required="" class="form-control" id="mail" placeholder="name@example.com">
+        <label for="email">Email address</label>
+        <input type="email" name="email" required="" class="form-control" id="email" placeholder="name@example.com">
     </div>
     <!-- Tel -->
     <div class="form-group">
@@ -40,3 +68,11 @@
         <button type="submit" name="send-message" value="OK">Send</button>
     </div>
 </form>
+
+<?php
+
+if ($_SERVER['REQUEST_METHOD'] == "POST" and isset($_POST['send-message'])) {
+    include("formFeedback.php");
+}
+
+?>

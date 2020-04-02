@@ -2,45 +2,63 @@
 <html lang="en">
 
 <!-- Head -->
-<?php
-$style = 'index';
-$title = 'Resume Intro';
-$nav = 'index';
-require('_head.php');
-?>
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Mr. Bean - Resume</title>
+
+    <!-- Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Playfair+Display&display=swap" rel="stylesheet">
+
+    <!-- CSS  -->
+    <link rel="stylesheet" href="./src/css/style.css">
+    <link rel="stylesheet" href="./src/css/sideMenu.css">
+    <?php
+    if (isset($_GET['page'])) {
+        echo '<link rel="stylesheet" href="./src/css/' . $_GET['page'] . '.css">';
+    }
+    else {
+        echo '<link rel="stylesheet" href="./src/css/intro.css">';
+    }
+    ?>
+    <link rel="stylesheet" href="./src/css/footer.css" >
+
+</head>
+
 
 <body>
     <!-- Sidebar menu -->
-    <?php require('_header.php'); ?>
+    <?php require_once('./src/views/layout/sideMenu.php'); ?>
 
-    <!-- Main content -->
+    <!-- Page content -->
     <div class="page-content">
+        <!-- Main content -->
         <section class="main-content">
-            <div class="trombi">
-                <img src="img/mrBeanTrombi.jpg">
-            </div>
-            <div class="intro-title">
-                <p>Hello, I'm</p>
-                <h2>Rowan Atkinson</h2>
-                <p>a.k.a. Mr. Bean</p>
-            </div>
-            <div class="intro content">
-                <p>
-                    Welcome to my resume, you are pleased to browse freely, and don't hesitate to write me a message indeed !
-                </p>
-                <p>To get news about me just subscribe in the field below.</p>
-            </div>
-            <div class="mail-sub content">
-                <form class="sub-form" action="" method="post">
-                    <label for="mail-sub" class="form-item">Subscribe for updates</label>
-                    <input type="email" class="form-item" id="mail-sub" name="mail-sub" size="50" placeholder="Your e-mail">
-                    <button type="submit" class="form-item">Submit</button>
-                </form>
-            </div>
+            <?php
+            if (isset($_GET['page'])) {
+                if ($_GET['page'] == 'intro') {
+                    include ('./src/views/pages/intro.php');
+                }
+                elseif ($_GET['page'] == 'experience') {
+                    include ('./src/views/pages/experience.php');
+                }
+                elseif ($_GET['page'] == 'hobbies') {
+                    include ('./src/views/pages/hobbies.php');
+                }
+                else {
+                    include ('./src/views/pages/contact.php');
+                }
+            }
+            else {
+                include ('./src/views/pages/intro.php');
+            }
+            ?>
         </section>
 
         <!-- Footer -->
-        <?php require('_footer.php'); ?>
+        <?php require_once('./src/views/layout/footer.php'); ?>
     </div>
 
 <!-- Scripts -->

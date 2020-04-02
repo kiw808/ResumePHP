@@ -2,10 +2,10 @@
     <div class="footer-content">
         <div class="footer-item footer-box" id="footer-links">
             <ul>
-                <li><a href="index.php">Introduction</a></li>
-                <li><a href="experience.php">Experience</a></li>
-                <li><a href="hobbies.php">Hobbies</a></li>
-                <li><a href="contact.php">Contact</a></li>
+                <li><a href="../../../public/index.php">Introduction</a></li>
+                <li><a href="../pages/experience.php">Experience</a></li>
+                <li><a href="../pages/hobbies.php">Hobbies</a></li>
+                <li><a href="../pages/contact.php">Contact</a></li>
             </ul>
         </div>
         <div class="footer-item" id="social">
